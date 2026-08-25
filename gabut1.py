@@ -11,12 +11,14 @@ def user():
             print("\n")
             print("[!] input kosong, silahkan coba lagi")
         
-        elif pengguna.isalpha() : #
-            print(f"halo, {pengguna}")
-            print(f"kondisi {pengguna.isalpha()}")
+        elif not pengguna.isalpha() : # misal not False dia bakal kesini kalo not true di bakal ke else programnya 
+            print(f"variabel ini aslinya : {pengguna.isalpha()}") 
+            print("ea")
+
         else:
-            print(f"{pengguna.isalpha()}")
+            print(f"variabel ini aslinya : {pengguna.isalpha()}") 
             #break
+            print("eaaaa")
 user()
 #
 #testing kode

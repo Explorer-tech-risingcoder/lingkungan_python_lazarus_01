@@ -18,7 +18,7 @@ def user():
             print(f"{pengguna.isalpha()}")
             #break
 user()
-
+#
 #testing kode
 #pengguna = "furqon".isalpha()
 #print(f"{pengguna}")

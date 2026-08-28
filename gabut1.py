@@ -7,18 +7,22 @@ def user():
     while True:
         print("ketik nama anda")
         pengguna = input("> ") 
-        if pengguna.strip() == "" : # strip itu cuma buat menghapus spasi kosong 
+        if pengguna.strip() == "" : # strip itu cuma buat menghapus spasi kosong, kondisi true ketika input kosong == kosong maka kesini outputnya 
             print("\n")
             print("[!] input kosong, silahkan coba lagi")
+
+        elif " " in pengguna: # kode in mengecek kalo ada spasi kondisi True maka output kesini, kalo gada spasi programm lanjut jalan
+            print("[!] nama tidak boleh ada spasi")
         
         elif not pengguna.isalpha() : # misal not False dia bakal kesini kalo not true di bakal ke else programnya 
-            print(f"variabel ini aslinya : {pengguna.isalpha()}") 
-            print("ea")
+            #print(f"variabel ini aslinya : {pengguna.isalpha()}") 
+            print("[!] nama tidak boleh ada angka")
 
         else:
-            print(f"variabel ini aslinya : {pengguna.isalpha()}") 
+            #print(f"variabel ini aslinya : {pengguna.isalpha()}") 
             #break
-            print("eaaaa")
+            print(f"halo, {pengguna}")
+            break
 user()
 #
 #testing kode

@@ -29,5 +29,32 @@ def uji_coba_kode():
         print(f"putaran: {angka}")
     print("\n") 
     print(angka)
-uji_coba_kode()
+
+    #fungsi return 
+#uji_coba_kode()
+
+def fungsi_return(asep, budi):
+    manusia = asep + budi 
+    #return manusia 
+#yanto = fungsi_return(4, 3)
+#print(yanto)
+
+
+
+
+#def coba_return(parameter1, parameter2):
+#    result = parameter1 + parameter2
+#    return result
+    
+#print(coba_return("muhammad", "furqon"))
+
+
+def return_uji(parameter1):
+    return parameter1 **2
+    
+print(return_uji(2))
+
+
+
+
 
